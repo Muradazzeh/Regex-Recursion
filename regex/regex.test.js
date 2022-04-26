@@ -33,7 +33,9 @@ function imagesSearcher(text){
     let reg=/\w{3}.(jpg|jpeg|png)/g
     
     arr=text.match(reg)
-  
+  if (arr==null){
+      arr=[]
+  }
     return arr
 }
 
